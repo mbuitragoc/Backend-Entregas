@@ -81,10 +81,3 @@ class Contenedor {
     }
   };
 }
-
-// const Producto = new Contenedor("productos.txt");
-// const crearProducto = async () => {
-//   const products = await Producto.getAll();
-//   console.log(products);
-// };
-// crearProducto();

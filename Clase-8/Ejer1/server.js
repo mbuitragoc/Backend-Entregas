@@ -1,5 +1,6 @@
 const express = require("express");
 const { Router } = express;
+const path = require("path");
 
 const app = express();
 const routerPersonas = Router();
@@ -10,14 +11,16 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use("/personas", routerPersonas);
-app.use(express.static(path.jois(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
   res.send("index.html");
 });
+
 routerPersonas.get("/", (req, res) => {
   res.json(personas);
 });
+
 routerPersonas.post("/", (req, res) => {
   personas.push(req.body);
   res.json(personas);
@@ -32,7 +35,6 @@ routerMascotas.post("/", (req, res) => {
   mascotas.push(req.body);
   res.json(mascotas);
 });
-
 
 app.listen(8080, () => {
   console.log("Server Running");
