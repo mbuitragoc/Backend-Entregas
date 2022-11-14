@@ -1,0 +1,25 @@
+extends layout
+
+block products
+
+  h1="Productos"
+  button 
+    a(href="/") Ingresar nuevo producto
+
+  if productos 
+    table 
+      thead
+        th="ID"
+        th="Nombre"
+        th="Precio"
+        th="Foto"
+      tbody 
+        each product in productos
+          tr 
+            td=product.id
+            td=product.title
+            td=product.price
+            td
+              img(src=product.thumbnail, alt=product.title) 
+  else 
+    h2="No hay productos"

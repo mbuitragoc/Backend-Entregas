@@ -1,0 +1,1 @@
+Despues de realizar la misma entrega con los 3 motores de plantilla (HBS, EJS y PUG) mi favorito es Handlebars, su sintaxis y facilidad de adopcion me gustan por encima de los otros

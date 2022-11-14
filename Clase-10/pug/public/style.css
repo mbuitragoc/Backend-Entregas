@@ -1,0 +1,26 @@
+table {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid lightgray;
+}
+
+th,
+td {
+  padding: 2px 4px;
+}
+
+img {
+  height: 120px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}

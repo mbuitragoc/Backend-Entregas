@@ -1,0 +1,16 @@
+extends layout
+
+block formulario
+  h1="Ingreso de productos"
+
+  form(action="/api/productos", method="post") 
+    label(for="title") Nombre del producto: 
+      input(type="text", name="title")
+    label(for="price") Precio del producto: 
+      input(type="text", name="price")
+    label(for="thumbnail") URL del producto: 
+      input(type="text", name="thumbnail")
+    button(type="submit") Enviar
+
+  button 
+    a(href="/productos") Ver Productos

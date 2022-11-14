@@ -1,0 +1,31 @@
+<%- include("./encabezado")-%> 
+<body>
+  <h1>Productos</h1>
+
+  <button><a href="/">Ingresar nuevo Producto</a></button>
+
+  <% if(productos.length > 0){ %>
+  <table>
+    <thead>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Precio</th>
+      <th>Foto</th>
+    </thead>
+    <tbody>
+      <% productos.forEach(producto=>{ %>
+        <tr>
+          <td><%=producto.id%></td>
+          <td><%=producto.title%></td>
+          <td><%=producto.price%></td>
+          <td><img src=<%= producto.thumbnail %> alt=""></td>
+        </tr>
+      <%})%>
+    </tbody>
+  </table>
+  <%}else{%>
+  <h2>No hay productos</h2>
+  <%}%>
+
+</body>
+ <%- include("./pie")-%>
