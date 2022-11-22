@@ -1,0 +1,13 @@
+{
+  "name": "entregaejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Servidor.js",
+  "module.exports": "Contedor",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -46,5 +46,11 @@
     "title": "Reloj",
     "price": "420",
     "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/clock-stopwatch-timer-time-512.png"
+  },
+  {
+    "id": 9,
+    "title": "Test",
+    "price": "78",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/ui-10/512/rocket-256.png"
   }
 ]
