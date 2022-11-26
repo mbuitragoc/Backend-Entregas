@@ -70,6 +70,7 @@ routerApi.delete("/productos/:id", async (req, res) => {
 
 routerApi.post("/productos", async (req, res) => {
   await Producto.save(req.body);
+  res.redirect("/productos");
 });
 
 routerApi.put("/productos/:id", async (req, res) => {
